@@ -35,7 +35,7 @@ jobs:
         mkdir -p artifacts/toolkit_linux artifacts/toolkit_windows artifacts/magisk_module
         unzip targets/toolkit_linux/build/toolkit_linux.zip -d artifacts/toolkit_linux
         unzip targets/toolkit_windows/build/toolkit_windows.zip -d artifacts/toolkit_windows
-        unzip targets/magisk_module/build/magisk_module.zip -d artifacts/magisk_module
+        unzip targets/magisk_module/build/module_android.zip -d artifacts/magisk_module
 
     - name: Upload Linux Toolkit
       uses: actions/upload-artifact@v4
