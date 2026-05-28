@@ -13,7 +13,7 @@ target_generic_efi_clean:
 target_toolkit_windows_clean:
 	cd targets/toolkit_windows && make clean
 target_toolkit_linux_clean:
-	cd targets/tookit_linux && make clean
+	cd targets/toolkit_linux && make clean
 target_magisk_module_clean:
 	cd targets/magisk_module && make clean
 targets_clean: clean_submodules target_generic_efi_clean target_toolkit_windows_clean target_toolkit_linux_clean target_magisk_module_clean
@@ -25,7 +25,7 @@ target_generic_efi:
 target_toolkit_windows:
 	cd targets/toolkit_windows && make build 
 target_toolkit_linux:
-	cd targets/tookit_linux && make build
+	cd targets/toolkit_linux && make build
 target_magisk_module:
 	cd targets/magisk_module && make build
 
